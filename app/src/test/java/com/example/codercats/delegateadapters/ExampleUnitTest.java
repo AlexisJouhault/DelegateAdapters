@@ -1,4 +1,4 @@
-package com.example.alexisjouhault.delegateadapters;
+package com.example.codercats.delegateadapters;
 
 import org.junit.Test;
 

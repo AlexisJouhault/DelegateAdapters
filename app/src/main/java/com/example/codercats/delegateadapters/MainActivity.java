@@ -1,4 +1,4 @@
-package com.example.alexisjouhault.delegateadapters;
+package com.example.codercats.delegateadapters;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

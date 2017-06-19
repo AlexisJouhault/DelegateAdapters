@@ -1,4 +1,4 @@
-package com.example.alexisjouhault.delegateadapters;
+package com.example.codercats.delegateadapters;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
