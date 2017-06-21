@@ -1,5 +1,6 @@
 package com.example.codercats.delegateadapters.adapters.delegates;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
@@ -11,7 +12,7 @@ import com.example.codercats.delegateadapters.views.ViewType;
  */
 
 public interface DelegateAdapter {
-    RecyclerView.ViewHolder createViewHolder(ViewGroup parent);
+    RecyclerView.ViewHolder createViewHolder(Context context, ViewGroup parent);
 
     void onBindViewHolder(RecyclerView.ViewHolder viewHolder, ViewType item);
 }

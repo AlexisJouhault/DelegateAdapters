@@ -1,5 +1,6 @@
 package com.example.codercats.delegateadapters.adapters;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.view.ViewGroup;
@@ -17,17 +18,19 @@ import java.util.List;
 
 public class BaseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final Context mContext;
     protected List<ViewType> mItems;
     protected SparseArray<DelegateAdapter> mAdapters;
 
-    public BaseAdapter() {
+    public BaseAdapter(Context context) {
+        mContext = context;
         mItems = new ArrayList<>();
         mAdapters = new SparseArray<>();
     }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return mAdapters.get(viewType).createViewHolder(parent);
+        return mAdapters.get(viewType).createViewHolder(mContext, parent);
     }
 
     @Override
