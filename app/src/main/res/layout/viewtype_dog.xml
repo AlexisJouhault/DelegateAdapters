@@ -1,33 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/viewtype_height"
-        android:layout_weight="0.6"
-        android:scaleType="centerCrop"
-        android:src="@drawable/dog2" />
+        android:id="@+id/viewtype_dog_imageview"
+        android:layout_width="@dimen/viewtype_animal_picture"
+        android:layout_height="@dimen/viewtype_animal_picture"
+        android:scaleType="centerCrop" />
 
-    <ScrollView
-        android:id="@+id/SCROLL_VIEW"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/viewtype_dog_textview_name"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:layout_weight="0.5"
         android:background="@color/colorPaleTurquoise"
-        android:padding="10dp">
-
-        <TextView
-            android:id="@+id/TEXT_VIEW"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/viewtype_dog2" />
-    </ScrollView>
+        android:gravity="center"
+        tools:text="Dog" />
 
 </LinearLayout>

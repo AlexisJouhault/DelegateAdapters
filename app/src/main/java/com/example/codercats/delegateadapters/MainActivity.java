@@ -30,21 +30,26 @@ public class MainActivity extends AppCompatActivity implements BaseAdapter.OnIte
     private static final List<Animal> ANIMALS = new ArrayList<>();
 
     static {
-        ANIMALS.add(new Cat());
-        ANIMALS.add(new Cat());
-        ANIMALS.add(new Dog());
-        ANIMALS.add(new Cat());
-        ANIMALS.add(new Cat());
-        ANIMALS.add(new Dog());
-        ANIMALS.add(new Cat());
-        ANIMALS.add(new Cat());
-        ANIMALS.add(new Dog());
-        ANIMALS.add(new Cat());
-        ANIMALS.add(new Cat());
-        ANIMALS.add(new Dog());
+        ANIMALS.add(new Cat("Luna", "https://img0.etsystatic.com/114/0/11758366/il_340x270.964395146_eynd.jpg"));
+        ANIMALS.add(new Cat("MainCoon", "http://static.boredpanda.com/blog/wp-content/uploads/2016/08/maine-coon-cat-photography-robert-sijka-65-57ad8f2e15bd3__880.jpg"));
+        ANIMALS.add(new Cat("Luna", "https://img0.etsystatic.com/114/0/11758366/il_340x270.964395146_eynd.jpg"));
+        ANIMALS.add(new Cat("MainCoon", "http://static.boredpanda.com/blog/wp-content/uploads/2016/08/maine-coon-cat-photography-robert-sijka-65-57ad8f2e15bd3__880.jpg"));
+        ANIMALS.add(new Cat("Luna", "https://img0.etsystatic.com/114/0/11758366/il_340x270.964395146_eynd.jpg"));
+        ANIMALS.add(new Cat("MainCoon", "http://static.boredpanda.com/blog/wp-content/uploads/2016/08/maine-coon-cat-photography-robert-sijka-65-57ad8f2e15bd3__880.jpg"));
+        ANIMALS.add(new Cat("Luna", "https://img0.etsystatic.com/114/0/11758366/il_340x270.964395146_eynd.jpg"));
+        ANIMALS.add(new Cat("MainCoon", "http://static.boredpanda.com/blog/wp-content/uploads/2016/08/maine-coon-cat-photography-robert-sijka-65-57ad8f2e15bd3__880.jpg"));
+        ANIMALS.add(new Cat("Luna", "https://img0.etsystatic.com/114/0/11758366/il_340x270.964395146_eynd.jpg"));
+        ANIMALS.add(new Cat("MainCoon", "http://static.boredpanda.com/blog/wp-content/uploads/2016/08/maine-coon-cat-photography-robert-sijka-65-57ad8f2e15bd3__880.jpg"));
+        ANIMALS.add(new Cat("Luna", "https://img0.etsystatic.com/114/0/11758366/il_340x270.964395146_eynd.jpg"));
+        ANIMALS.add(new Cat("MainCoon", "http://static.boredpanda.com/blog/wp-content/uploads/2016/08/maine-coon-cat-photography-robert-sijka-65-57ad8f2e15bd3__880.jpg"));
+        ANIMALS.add(new Cat("Luna", "https://img0.etsystatic.com/114/0/11758366/il_340x270.964395146_eynd.jpg"));
+        ANIMALS.add(new Cat("MainCoon", "http://static.boredpanda.com/blog/wp-content/uploads/2016/08/maine-coon-cat-photography-robert-sijka-65-57ad8f2e15bd3__880.jpg"));
+        ANIMALS.add(new Cat("Luna", "https://img0.etsystatic.com/114/0/11758366/il_340x270.964395146_eynd.jpg"));
+        ANIMALS.add(new Cat("MainCoon", "http://static.boredpanda.com/blog/wp-content/uploads/2016/08/maine-coon-cat-photography-robert-sijka-65-57ad8f2e15bd3__880.jpg"));
+        ANIMALS.add(new Cat("Luna", "https://img0.etsystatic.com/114/0/11758366/il_340x270.964395146_eynd.jpg"));
+        ANIMALS.add(new Cat("MainCoon", "http://static.boredpanda.com/blog/wp-content/uploads/2016/08/maine-coon-cat-photography-robert-sijka-65-57ad8f2e15bd3__880.jpg"));
+        ANIMALS.add(new Dog("Malamute", "https://blog.pawedin.com/app/uploads/2016/03/alaskan-malamute-snow.jpg"));
     }
-
-    private AnimalsAdapter mCuteAnimalsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,9 +58,10 @@ public class MainActivity extends AppCompatActivity implements BaseAdapter.OnIte
 
         ButterKnife.bind(this);
 
-        mCuteAnimalsAdapter = new AnimalsAdapter(getApplicationContext(), this);
+        AnimalsAdapter mCuteAnimalsAdapter = new AnimalsAdapter(getApplicationContext(), this);
         mCuteAnimalsAdapter.addItems(ANIMALS);
         mRecyclerView.setAdapter(mCuteAnimalsAdapter);
+        mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
     }
 
@@ -63,10 +69,10 @@ public class MainActivity extends AppCompatActivity implements BaseAdapter.OnIte
     public void onItemSelected(ViewType item) {
         switch (item.getViewType()) {
             case CAT:
-                Toast.makeText(this, "CAT", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "CAT", Toast.LENGTH_SHORT).show();
                 break;
             case DOG:
-                Toast.makeText(this, "DOG", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "DOG", Toast.LENGTH_SHORT).show();
                 break;
             default:
         }

@@ -9,8 +9,24 @@ import static com.example.codercats.delegateadapters.views.ViewTypes.CAT;
 
 public class Cat extends Animal {
 
+    private final String mImage;
+    private final String mName;
+
+    public Cat(String name, String image) {
+        mImage = image;
+        mName = name;
+    }
+
     @Override
     public int getViewType() {
         return CAT;
+    }
+
+    public String getImage() {
+        return mImage;
+    }
+
+    public String getName() {
+        return mName;
     }
 }
