@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF00FF</color>
+    <color name="colorPrimary">@color/colorFuchsia</color>
     <color name="colorPrimaryDark">#AFEEEE</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorFuchsia">#FF00FF</color>

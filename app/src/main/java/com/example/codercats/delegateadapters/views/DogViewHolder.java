@@ -1,11 +1,9 @@
 package com.example.codercats.delegateadapters.views;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.codercats.delegateadapters.R;
@@ -36,7 +34,9 @@ public class DogViewHolder extends BaseViewHolder<Dog> {
     @Override
     public void bind(ViewType dog, BaseAdapter.OnItemSelectedListener onItemSelectedListener) {
         super.bind(dog, onItemSelectedListener);
-        if (dog instanceof Dog) bindItem((Dog) dog);
+        if (dog instanceof Dog) {
+            bindItem((Dog) dog);
+        }
     }
 
     @Override

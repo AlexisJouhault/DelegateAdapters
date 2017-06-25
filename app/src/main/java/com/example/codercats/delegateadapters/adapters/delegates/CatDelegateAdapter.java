@@ -3,11 +3,9 @@ package com.example.codercats.delegateadapters.adapters.delegates;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.codercats.delegateadapters.R;
-import com.example.codercats.delegateadapters.models.Cat;
 import com.example.codercats.delegateadapters.views.CatViewHolder;
 import com.example.codercats.delegateadapters.views.ViewType;
 import com.example.codercats.delegateadapters.adapters.BaseAdapter;

@@ -1,32 +1,3 @@
 <resources>
     <string name="app_name">DelegateAdapters</string>
-    <string name="item_video">Videos</string>
-    <string name="item_photo">Photos</string>
-    <string name="item_article">Articles</string>
-
-    <string name="viewtype_cat3">
-        13 Reasons To Love Black Cats\n
-        1. Sometimes they just look like really cute fluffballs with eyes.\n
-        2. They are basically miniature black panthers.\n
-        3. They are natural models in the right lighting.\n
-        4. They are hardly ~spooky~ when they are sleeping so sweetly.\n
-        5. They are encouraging.\n
-        6. And can be ever so patient.\n
-        7. Any color looks good on them.\n
-        8. When they are mischievous, it\'s utterly adorable.\n
-        9. They are really great confidants.
-        10. Their fur is SO. DANG. SILKY.\n
-        11. And their yellow eyes stand out MAGNIFICENTLY against their black fur.\n
-        12. Or maybe they have two different colored eyes, in which case they are EVEN MORE MAGNIFICENT.\n
-        13. You can take super ~artsy~ black and white photos of them.\n </string>
-
-    <string name="viewtype_dog2">
-        Alaskan Malamute\n
-        No doubt about it, the Alaskan Malamute is a beautiful breed, but what makes the Malamute different than the Siberian Husky? What\’s it\’s story?
-        Well, if you’ve ever been confused, curious, or just in love with the Alaskan Malamute, these fun facts are for you. \n
-        1. The Alaskan Malamute was officially recognized by the American Kennel Club in 1935. \n
-        2. But their true origin far predates that—the breed is over thousands of years old. \n
-        3. An early version of the Malamute is said to have accompanied Siberian nomads across the Bering straits into what is now known as Alaska. \n
-        4. Those nomads were called Mahlemuts, which is where the breed gets its name. \n
-        5. The dog came to be a cornerstone of Inuit life for hundreds of years. They were used to hunt seals, chase away polar bears, and sled dogs. \n </string>
 </resources>

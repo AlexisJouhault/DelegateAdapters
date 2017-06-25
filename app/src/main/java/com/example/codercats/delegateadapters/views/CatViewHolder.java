@@ -1,7 +1,6 @@
 package com.example.codercats.delegateadapters.views;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -35,7 +34,9 @@ public class CatViewHolder extends BaseViewHolder<Cat> {
     @Override
     public void bind(ViewType cat, BaseAdapter.OnItemSelectedListener onItemSelectedListener) {
         super.bind(cat, onItemSelectedListener);
-        if (cat instanceof Cat) bindItem((Cat) cat);
+        if (cat instanceof Cat) {
+            bindItem((Cat) cat);
+        }
     }
 
     @Override
