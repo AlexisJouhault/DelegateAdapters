@@ -17,6 +17,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* [Juan Ignacio Saravia's](https://android.jlelse.eu/@juanchosaravia) kotlin app tutorial, which introduced the concept to me
+* [Juan Ignacio Saravia's](https://android.jlelse.eu/@juanchosaravia) kotlin app tutorial, which introduced the concept to me and from where most of the code came (adapted from kotlin)
 * [Hannes Dorfmann's](http://hannesdorfmann.com/android/adapter-delegates) article on delegate adapters
 
