@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/viewtype_cat_imageview"
+        android:layout_width="@dimen/viewtype_animal_picture"
+        android:layout_height="@dimen/viewtype_animal_picture"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/viewtype_cat_textview_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPaleTurquoise"
+        android:gravity="center"
+        tools:text="Cat" />
+
+</LinearLayout>
